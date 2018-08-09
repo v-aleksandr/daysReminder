@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Days Remainder</string>
+    <string name="empty"> </string>
+    <string name="action_settings">Settings</string>
+    <string name="action_new">New contact</string>
+    <string name="action_contacts">Load all from phone contacts</string>
+    <string name="action_clear">Clear contact list</string>
+    <string name="action_professions">Manage professions</string>
+    <string name="action_holidays">Manage holidays</string>
+    <string name="action_find">Find contact(by name)</string>
+    <string name="action_delete">Delete contact</string>
+    <string name="action_info">About</string>
+    <string name="action_time">Remainder time</string>
+    <string name="action_vibro">Long vibro(times)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_reg_receiver">Register receiver</string>
+    <string name="action_unreg_receiver">Unregister receiver</string>
+</resources>

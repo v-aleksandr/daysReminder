@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="100"
+        android:title="@string/action_new"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_contacts"
+        android:orderInCategory="100"
+        android:title="@string/action_contacts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_find"
+        android:orderInCategory="100"
+        android:title="@string/action_find"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="100"
+        android:title="@string/action_delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:title="@string/action_clear"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_professions"
+        android:orderInCategory="100"
+        android:title="@string/action_professions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_holidays"
+        android:orderInCategory="100"
+        android:title="@string/action_holidays"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reg_receiver"
+        android:orderInCategory="100"
+        android:title="@string/action_reg_receiver"
+        android:onClick="registerBroadcastReceiver"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_unreg_receiver"
+        android:orderInCategory="100"
+        android:title="@string/action_unreg_receiver"
+        android:onClick="unregisterBroadcastReceiver"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"
+        android:title="@string/action_info"
+        app:showAsAction="never" />
+    <!--<item-->
+    <!--android:id="@+id/action_time_setting"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_time"-->
+    <!--app:showAsAction="never"/>-->
+
+    <!--<item-->
+    <!--android:id="@+id/action_vibro_setting"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_vibro"-->
+    <!--app:showAsAction="never"/>-->
+
+</menu>
+

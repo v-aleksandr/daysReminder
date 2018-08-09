@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="9"
+        android:dialogTitle="Укажите в начале какого часа уведомлять(0 - 24)"
+        android:key="@string/action_time"
+        android:summary="Устанавливает новое время уведомления"
+        android:title="Время уведомления" />
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:dialogTitle="Укажите количество секундных вибраций при уведомлении(от 1 до 10)"
+        android:key="@string/action_vibro"
+        android:summary="Устанавливает новое количество вибраций при уведомлении"
+        android:title="Количество вибраций" />
+</PreferenceScreen>
