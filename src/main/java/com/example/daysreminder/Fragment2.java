@@ -1,4 +1,4 @@
-package com.example.daysremainder;
+package com.example.daysreminder;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -13,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,7 +32,7 @@ public class Fragment2 extends Fragment {
     private boolean editMode;
     private int elementIndex;
 
-    private DaysRemainderDbHelper dr_db;
+    private DaysReminderDbHelper dr_db;
 
     private String[] professionNames;
     private int[] professionIndex;
@@ -58,7 +57,7 @@ public class Fragment2 extends Fragment {
         mHasChildren = rootView.findViewById(R.id.edit_has_children);
         mIsFriend = rootView.findViewById(R.id.edit_is_friend);
 
-        dr_db = new DaysRemainderDbHelper(getContext());
+        dr_db = new DaysReminderDbHelper(getContext());
 
         SQLiteDatabase db = dr_db.getReadableDatabase();
         Cursor c = db.rawQuery("select _id, name from profession order by name", null);
@@ -123,7 +122,7 @@ public class Fragment2 extends Fragment {
                     everythingOk = false;
                 }
                 if (everythingOk) {
-                    DaysRemainderDbHelper dr_db = new DaysRemainderDbHelper(getContext());
+                    DaysReminderDbHelper dr_db = new DaysReminderDbHelper(getContext());
                     SQLiteDatabase db = dr_db.getWritableDatabase();
 
                     ContentValues cv = new ContentValues();

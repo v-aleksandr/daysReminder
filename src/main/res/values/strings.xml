@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Days Remainder</string>
+    <string name="app_name">Days Reminder</string>
     <string name="empty"> </string>
     <string name="action_settings">Settings</string>
     <string name="action_new">New contact</string>
@@ -10,7 +10,7 @@
     <string name="action_find">Find contact(by name)</string>
     <string name="action_delete">Delete contact</string>
     <string name="action_info">About</string>
-    <string name="action_time">Remainder time</string>
+    <string name="action_time">Reminder time</string>
     <string name="action_vibro">Long vibro(times)</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.daysremainder"
+        applicationId "com.example.daysreminder"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1

@@ -1,4 +1,4 @@
-package com.example.daysremainder;
+package com.example.daysreminder;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

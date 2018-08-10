@@ -1,16 +1,15 @@
-package com.example.daysremainder;
+package com.example.daysreminder;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DaysRemainderDbHelper extends SQLiteOpenHelper {
+public class DaysReminderDbHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "daysremainder.db";
+    private static final String DATABASE_NAME = "daysreminder.db";
     private static final int DATABASE_VERSION = 1;
 
-    public DaysRemainderDbHelper(Context context) {
+    public DaysReminderDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

@@ -1,4 +1,4 @@
-package com.example.daysremainder;
+package com.example.daysreminder;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,15 +7,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
-import android.widget.Toast;
 
-import java.text.Format;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 
-public class DaysRemainderReceiver extends BroadcastReceiver {
+public class DaysReminderReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {

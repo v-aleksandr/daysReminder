@@ -1,4 +1,4 @@
-package com.example.daysremainder;
+package com.example.daysreminder;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,7 +18,7 @@ public class Fragment1 extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        DaysRemainderDbHelper dr_db = new DaysRemainderDbHelper(getContext());
+        DaysReminderDbHelper dr_db = new DaysReminderDbHelper(getContext());
         SQLiteDatabase db = dr_db.getReadableDatabase();
         fillContactsLists(db);
         db.close();

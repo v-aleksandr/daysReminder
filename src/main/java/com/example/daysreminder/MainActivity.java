@@ -1,4 +1,4 @@
-package com.example.daysremainder;
+package com.example.daysreminder;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,11 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
-
-import java.util.Calendar;
-import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity implements Fragment1.OnSelectedElementListener/*, NavigationView.OnNavigationItemSelectedListener*/ {
@@ -25,15 +21,15 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnSelec
     public int ACTION_VIBRO = 5;
     private boolean mIsDynamic;
     private int currentElement = 0;
-    private DaysRemainderReceiver mDaysRemainderReceiver = new DaysRemainderReceiver();
+    private DaysReminderReceiver mDaysReminderReceiver = new DaysReminderReceiver();
 
     public void registerBroadcastReceiver(MenuItem item) {
-        this.registerReceiver(mDaysRemainderReceiver, new IntentFilter("android.intent.action.TIME_TICK"));
+        this.registerReceiver(mDaysReminderReceiver, new IntentFilter("android.intent.action.TIME_TICK"));
         Toast.makeText(getApplicationContext(), "Приёмник включен", Toast.LENGTH_LONG).show();
     }
 
     public void unregisterBroadcastReceiver(MenuItem item) {
-        this.unregisterReceiver(mDaysRemainderReceiver);
+        this.unregisterReceiver(mDaysReminderReceiver);
         Toast.makeText(getApplicationContext(), "Приёмник выключён", Toast.LENGTH_LONG).show();
     }
 
@@ -130,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnSelec
                 if (currentElement == 0) {
                     Toast.makeText(this, "Сначала выберите контакт", Toast.LENGTH_LONG).show();
                 } else {
-                    final DaysRemainderDbHelper dr_db = new DaysRemainderDbHelper(this);
+                    final DaysReminderDbHelper dr_db = new DaysReminderDbHelper(this);
                     builder = new AlertDialog.Builder(this);
                     builder.setTitle("Удаление контакта")
                             .setMessage("Программа удалит информацию о контакте только из СВОЕЙ базы данных, контакты в телефонной книге НЕ ИЗМЕНЯТСЯ!!! \n\nВы действительно хотите удалить контакт?")
@@ -155,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnSelec
                 }
                 return true;
             case R.id.action_clear:
-                final DaysRemainderDbHelper dr_db = new DaysRemainderDbHelper(this);
+                final DaysReminderDbHelper dr_db = new DaysReminderDbHelper(this);
                 builder = new AlertDialog.Builder(this);
                 builder.setTitle("Удаление всех контакта")
                         .setMessage("Программа удалит все контакті только из СВОЕЙ базы данных, контакты в телефонной книге НЕ ИЗМЕНЯТСЯ!!! \n\nВы действительно хотите удалить ВСЕ?")
